@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 os.environ["LANGCHAIN_TRACING_V2"]="true"
-os.environ["LANGCHAIN_API_KEY"]="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"
+os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
 LANGCHAIN_PROJECT = "Custom_Chatbot"
 
